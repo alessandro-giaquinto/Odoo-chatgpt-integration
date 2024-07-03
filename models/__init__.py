@@ -1,1 +1,1 @@
-from . import custom_model 
+from . import chat_gpt_model 

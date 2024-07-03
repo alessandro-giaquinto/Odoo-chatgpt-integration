@@ -8,8 +8,8 @@
     'author': 'Alten',
     'depends': ['base', 'base_setup', 'web'],
     'data': [
-        'views/main_view.xml',
         'security/ir.model.access.csv',
+        'views/main_view.xml',
     ],
     'installable': True,
     'application': True,
