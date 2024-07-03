@@ -26,4 +26,4 @@
         <field name="res_model">my.model</field>
         <field name="view_mode">tree,form</field>
     </record>-->
-</odoo>
+</odoo> 
