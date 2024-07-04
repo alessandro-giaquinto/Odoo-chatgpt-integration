@@ -19,6 +19,11 @@ export class MainViewController extends Component {
             console.log(this.button.el);
         });
     }
+
+    async onSendText() {
+        this.button.el.value = "Attendere prego";
+        /* Chiamata BE o FE? */
+    }
 }
 
  

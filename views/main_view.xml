@@ -20,14 +20,25 @@
                             <field name="name" t-ref="text_chat_gpt"/>
                         </group>
                         <group>
-                            <button t-ref="button_chat_gpt"></button>
+                            <button t-ref="button_chat_gpt" t-on-click="onSendText">Invia a chatGPT</button>
                         </group>
                     </sheet>
                 </field>
             </form>
         </field>
+<!-- Test 
+        <templates>
+            <t t-name="test_form_chat_gpt">
+                <form t-on-submit.prevent="submitForm">
+                    <input type="text" class="form-control" placeholder="Name" t-on-input="onNameChange"/>
+                    <input type="email" class="form-control" placeholder="Email" t-on-input="onEmailChange"/>
+                    <textarea class="form-control" placeholder="Message" t-on-input="onMessageChange"/>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </t>
+        </templates>
     </record>
-
+-->
     <!--
     da cancelllare
     <menuitem id="menu_my_model" name="My Model" sequence="10"/>
