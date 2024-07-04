@@ -17,10 +17,10 @@
                 <field string="input_data_form"> 
                     <sheet>
                         <group>
-                            <field name="name" />
+                            <field name="name" t-ref="text_chat_gpt"/>
                         </group>
                         <group>
-                            <button></button>
+                            <button t-ref="button_chat_gpt"></button>
                         </group>
                     </sheet>
                 </field>
