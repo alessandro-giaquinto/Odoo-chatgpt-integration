@@ -14,12 +14,23 @@
         <field name="model">custom.model</field>
         <field name="arch" type="xml">
             <form>
-                <field name="name"/>
+                <field string="input_data_form"> 
+                    <sheet>
+                        <group>
+                            <field name="name" />
+                        </group>
+                        <group>
+                            <button></button>
+                        </group>
+                    </sheet>
+                </field>
             </form>
         </field>
     </record>
 
-    <!--<menuitem id="menu_my_model" name="My Model" sequence="10"/>
+    <!--
+    da cancelllare
+    <menuitem id="menu_my_model" name="My Model" sequence="10"/>
     <menuitem id="submenu_my_model" name="My Models" parent="menu_my_model" action="action_my_model"/>
     <record id="action_my_model" model="ir.actions.act_window">
         <field name="name">My Models</field>
