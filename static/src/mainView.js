@@ -2,8 +2,8 @@
 import { Component, useState, useRef, onMounted } from '@odoo/owl';
 
 
-export class MainViewController extends Component {
-    static template = "my_module.MainView" /* Cambia my_module nel nome effettivo del modulo */
+export class MainView extends Component {
+    static template = "main_view.MainView" /* deve sempre coincidere con l'attributo t-name del nodo <template> */
 
     /* Richiama gli hook qui dentro, serve la lettura ORM dell'API per il token */
     setup() {
